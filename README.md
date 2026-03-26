@@ -203,7 +203,7 @@ Below is a table comparing the 4 main automating apps for Android and why I excl
 
 |Name of app|[Tasker](https://tasker.joaoapps.com)|[MacroDroid](https://www.macrodroid.com)|[Automate](https://llamalab.com/automate)|[Automation](https://server47.de/automation)|
 |:-:|:-:|:-:|:-:|:-:|
-|Icon|<img src="Icons/Tasker.webp" width="43%" alt="Tasker's icon">|<img src="Icons/MacroDroid.png" width="29%" alt="MacroDroid's icon">|<img src="Icons/Automate.webp" width="79%" alt="Automate's icon">|<img src="Icons/Automation.png" alt="Automation's icon">|
+|Icon|<img src="Icons/Tasker.webp" width="47%" alt="Tasker's icon">|<img src="Icons/MacroDroid.png" width="31%" alt="MacroDroid's icon">|<img src="Icons/Automate.webp" width="79%" alt="Automate's icon">|<img src="Icons/Automation.png" alt="Automation's icon">|
 |App Store|Google Play Store|Google Play Store|Google Play Store|F-Droid OR Google Play Store|
 |Byte Size (MB)|99|205|21|14|
 |Cost|Costs Money|Freemium|Freemium|Free - FOSS|
