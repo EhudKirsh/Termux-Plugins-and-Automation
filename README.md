@@ -95,7 +95,7 @@ The only thing you can't edit with these apps is turning the scripts to be execu
 I couldn't find any ideal File Manager, so here's a comparison table of the only 4 free privacy-respecting (no trackers & no data collection) File Manager apps
 	I found on Android that can mount Termux via the SAF:
 
-|Criteria|[File/zip manager 2025](https://reports.exodus-privacy.eu.org/en/reports/com.sobha.filemanager/latest)|[Ghost Commander](https://reports.exodus-privacy.eu.org/en/reports/com.ghostsq.commander/latest)|[Files](https://reports.exodus-privacy.eu.org/en/reports/com.marc.files/latest)|[FX](https://reports.exodus-privacy.eu.org/en/reports/nextapp.fx/latest)|
+|Criteria \ App|[File/zip manager 2025](https://reports.exodus-privacy.eu.org/en/reports/com.sobha.filemanager/latest)|[Ghost Commander](https://reports.exodus-privacy.eu.org/en/reports/com.ghostsq.commander/latest)|[Files](https://reports.exodus-privacy.eu.org/en/reports/com.marc.files/latest)|[FX](https://reports.exodus-privacy.eu.org/en/reports/nextapp.fx/latest)|
 |:-:|:-:|:-:|:-:|:-:|
 |Icon|<img src="Icons/File zip manager 2025.webp" width="60" alt="File zip manager 2025's icon">|<img src="Icons/Ghost Commander.png" width="90" alt="Ghost Commander's icon">|<img src="Icons/Files.webp" width="60" alt="Files's icon">|<img src="Icons/FX.png" width="69" alt="FX's icon">|
 |App Store|Google Play Store|F-Droid|Google Play Store|Google Play Store|
@@ -201,7 +201,7 @@ I simply use the Termux:Widget plugin when I want to run a script manually, and 
 
 Below is a table comparing the 4 main Automating apps for Android and why I exclusively choose to use the 'Automation' app:
 
-|Name of app|[Tasker](https://tasker.joaoapps.com)|[MacroDroid](https://www.macrodroid.com)|[Automate](https://llamalab.com/automate)|[Automation](https://server47.de/automation)|
+|Criteria \ App|[Tasker](https://tasker.joaoapps.com)|[MacroDroid](https://www.macrodroid.com)|[Automate](https://llamalab.com/automate)|[Automation](https://server47.de/automation)|
 |:-:|:-:|:-:|:-:|:-:|
 |Icon|<img src="Icons/Tasker.webp" width="69" alt="Tasker's icon">|<img src="Icons/MacroDroid.png" width="69" alt="MacroDroid's icon">|<img src="Icons/Automate.webp" width="69" alt="Automate's icon">|<img src="Icons/Automation.png" alt="Automation's icon">|
 |App Store|Google Play Store|Google Play Store|Google Play Store|F-Droid OR Google Play Store|
