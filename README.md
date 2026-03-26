@@ -96,7 +96,7 @@ I couldn't find any ideal file manager, so here's a comparison table of the only
 
 |Criteria|[File/zip manager 2025](https://reports.exodus-privacy.eu.org/en/reports/com.sobha.filemanager/latest)|[Ghost Commander](https://reports.exodus-privacy.eu.org/en/reports/com.ghostsq.commander/latest)|[Files: Shortcut](https://reports.exodus-privacy.eu.org/en/reports/com.files.shortcut/latest)|[FX](https://reports.exodus-privacy.eu.org/en/reports/nextapp.fx/latest)|
 |:-:|:-:|:-:|:-:|:-:|
-|Icon|<img src="Icons/File zip manager 2025.webp" width="40%" alt="File zip manager 2025's icon">|<img src="Icons/Ghost Commander.png" width="66%" alt="Ghost Commander's icon">|<img src="Icons/Files Shortcut.png" width="60%" alt="Files Shortcut's icon">|<img src="Icons/FX.png" width="40%" alt="FX's icon">|
+|Icon|<img src="Icons/File zip manager 2025.webp" width="40" alt="File zip manager 2025's icon">|<img src="Icons/Ghost Commander.png" width="66%" alt="Ghost Commander's icon">|<img src="Icons/Files Shortcut.png" width="60%" alt="Files Shortcut's icon">|<img src="Icons/FX.png" width="40%" alt="FX's icon">|
 |App Store|Google Play Store|F-Droid|Google Play Store|Google Play Store|
 |Byte Size (MB)|20|12|13|32|
 |How to mount Termux using the SAF|☰ > '➕ Add storage...' > 'External storage' > ☰ > 'Termux' > 'USE THIS FOLDER' > 'ALLOW' > 'home'|Just click on<br>'Storage Access Framework'<br>from the home page|☰ > 'Termux'|⋮ > 'Connect to Storage' > 'Termux' > 'USE THIS FOLDER' > 'ALLOW'|
@@ -203,7 +203,7 @@ Below is a table comparing the 4 main automating apps for Android and why I excl
 
 |Name of app|[Tasker](https://tasker.joaoapps.com)|[MacroDroid](https://www.macrodroid.com)|[Automate](https://llamalab.com/automate)|[Automation](https://server47.de/automation)|
 |:-:|:-:|:-:|:-:|:-:|
-|Icon|<img src="Icons/Tasker.webp" width="40%" alt="Tasker's icon">|<img src="Icons/MacroDroid.png" width="28%" alt="MacroDroid's icon">|<img src="Icons/Automate.webp" width="80%" alt="Automate's icon">|<img src="Icons/Automation.png" alt="Automation's icon">|
+|Icon|<img src="Icons/Tasker.webp" width="40%" alt="Tasker's icon">|<img src="Icons/MacroDroid.png" width="28%" alt="MacroDroid's icon">|<img src="Icons/Automate.webp" width="79%" alt="Automate's icon">|<img src="Icons/Automation.png" alt="Automation's icon">|
 |App Store|Google Play Store|Google Play Store|Google Play Store|F-Droid OR Google Play Store|
 |Byte Size (MB)|99|205|21|14|
 |Cost|Costs Money|Freemium|Freemium|Free - FOSS|
@@ -256,8 +256,7 @@ If you try to run a Termux script in Automation now, you might get this error no
 <img src="Screenshots/ErrorNotification.png" width="40%" alt="ErrorNotification">
 
 It means that you successfully used the 'chmod' line, meaning that the Termux:Widget plugin will manage to run this script,
-	and you gave the Automation app the permission it needs, but you've yet to tell Termux to allow external apps to run scripts in it.
-<br>To do that, add this line to the ~/.termux/termux.properties file:
+	and you gave the Automation app the permission it needs, but you've yet to tell Termux to allow external apps to run scripts in it.<br>To do that, add this line to the ~/.termux/termux.properties file:
 
 ```txt
 allow-external-apps=true
@@ -292,7 +291,7 @@ Now Automation should be able to run scripts in Termux in the background, congra
 	so "with great power comes great responsibility" and it's your responsibility to set condition triggers that will save battery.
 	- I consider in the future to add to the .sh script itself another if-AND logical condition to only pull the Rclone bisync if there's sufficient storage 
 		left, otherwise leave a notification warning 🔔⚠️. Use this line:
-		
+
 		```sh
 		df -k . | awk 'NR==2 {printf "%.2f GB\n", $4/1048576}'
 		```
