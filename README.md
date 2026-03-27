@@ -8,15 +8,16 @@ Here's how I automate Termux scripts silently in the background using the Automa
 # Step 1 - gather the ingredients for this recipe, the apps that I use, that work for me:
 These are the apps I installed for this to work:
 <br>Termux, [Termux:API](https://reports.exodus-privacy.eu.org/en/reports/com.termux.api/latest), [Termux:Widget](https://reports.exodus-privacy.eu.org/en/reports/com.termux.widget/latest), [Automation](https://reports.exodus-privacy.eu.org/en/reports/com.jens.automation2/latest),
-	[File/zip manager 2025](https://reports.exodus-privacy.eu.org/en/reports/com.sobha.filemanager/latest), [BeauTyXT](https://beautyxt.app).
+	the [Simple Text Editor](https://github.com/maxistar/TextPad) and the [File/zip manager 2025](https://reports.exodus-privacy.eu.org/en/reports/com.sobha.filemanager/latest).
 
 Install Termux and its plugins from either F-Droid or GitHub, not the Google Play Store!
 <br>Termux from the Google Play Store is notoriously bad. I won't explain it here. Look it up or ask an AI if you're curious.
 
-I installed Termux, and its plugins and Automation using [Droid-ify](https://reports.exodus-privacy.eu.org/en/reports/com.looker.droidify/latest).
+I installed Termux, and its plugins, Automation and the Simple Text Editor using [Droid-ify](https://reports.exodus-privacy.eu.org/en/reports/com.looker.droidify/latest).
 
-The other 2 apps aren't available on F-Droid, so I installed the File/zip manager 2025 from the Google Play Store and<br>BeauTyXT from Accrescent 🌙.
-Technically there are other File Manager apps that can be used here.<br>I discuss those in step 3, and why I prefer to just use the File/zip manager 2025 app.
+That last app isn't available on F-Droid, so I installed it from the Google Play Store.
+<br>Technically there are other Text Editor and File Manager apps that can be used here.
+<br>I discuss those in step 3, and why I prefer to just use the File/zip manager 2025 app.
 
 # Step 2, let's get the Termux:API plugin to work:
 The Termux:API plugin gives Termux admin-level powers over hardware sensors.
@@ -94,7 +95,11 @@ To view, rename, create and delete these folders, as well as to copy or cut (mov
 
 The only thing you can't edit with these apps is turning the scripts to be executable. For this you need the 'chmod' line above.
 
-I decided to select [BeauTyXT](https://beautyxt.app) as my Text Editor of choice because it can open various text file formats and it auto-saves.
+Besides the [Simple Text Editor](https://github.com/maxistar/TextPad), I also occasionally use [BeauTyXT](https://beautyxt.app) as my Text Editor of choice.
+<br>Both open various text file formats and auto-save, though for the Simple Text Editor, it's optional.
+<br>BeauTyXT is decent at rendering Markdown .md files like this README. The Simple Text Editor weighs 5MB while BeauTyXT weighs 46MB.
+<br>I prefer to use the Simple Text Editor because BeauTyXT is often glitchy and always annoyingly adds a line break '\n' at the end.
+<br>While the Simple Text Editor can be installed from either F-Droid or the Google Play Store, BeauTyXT is installed exclusively from Accrescent 🌙.
 
 I couldn't find any ideal File Manager, so here's a comparison table of the only 4 free privacy-respecting (no trackers & no data collection) File Manager apps
 	I found on Android that can mount Termux via the SAF:
@@ -107,7 +112,7 @@ I couldn't find any ideal File Manager, so here's a comparison table of the only
 |How to mount Termux using the SAF|☰ > '➕ Add storage...' > 'External storage' > ☰ > 'Termux' > 'USE THIS FOLDER' > 'ALLOW' > 'home'|Just click on<br>'Storage Access Framework'<br>from the home page|☰ > 'Termux'|⋮ > 'Connect to Storage' > 'Termux' > 'USE THIS FOLDER' > 'ALLOW'|
 |How to show hidden dotfiles|Click on ⋮ ><br>tick 'Show hidden files' ☑️|Click on the '📄✔' symbol just to the left of ⋮ ><br>tick 'Hidden' ☑️|Click on ⋮ ><br>click on 'Show hidden files'|Enter any folder ><br>click on ⋮ > 'Show Hidden'|
 |📋 Easily Copy, Cut (Move) ✂️ & Paste files and folders|✔️|❌<br>Requires copying the destination path to clipboard and pasting it when asked where to paste files|✔️|✔️|
-|📝 Can open all text files in BeauTyXT|✔️|✔️|❌<br><br>Only .sh|❌<br>Only opens BeauTyXT and all other Text Editors in read-only mode. FX has its own Text Editor, but it doesn't auto-save and often fails to save at all!|
+|📝 Can open all text files in the Simple Text Editor or BeauTyXT|✔️|✔️|❌<br><br>Only .sh|❌<br>FX has its own Text Editor, but it doesn't auto-save and often fails to save at all! FX only opens all other Text Editors in read-only mode.|
 |🗂️ Can create files & folders, and rename them & |✔️|✔️|❌<br>Can't create new files or rename|✔️|
 |Auto-updates without needing to go to another folder and then back or pull down|❌|✔️|❌|❌|
 |SAF permission persists for future boot sessions|❌|✔️|✔️|✔️|
@@ -129,7 +134,7 @@ So you need to mount Termux again each time you boot and want to access the Term
 <br>This will create duplicate mounts, so just go to: ☰ > hold on the name of any mount > 'Remove'.
 
 Files and FX seem unreliable to me when it comes to editing files, so I would at most use these to do other things like copying files,
-	which Ghost Commander struggles with, while Ghost Commander is stronger when it comes to editing all text files with BeauTyXT.
+	which Ghost Commander struggles with, while Ghost Commander is stronger when it comes to editing all text files with the Simple Text Editor or BeauTyXT.
 In other words, it might make sense to use at least 2 file mangers to overcome the shortcomings of each other.
 For me, it's easier to just work with the File/zip manager 2025 app and that's it, even though it does have disadvantages as you can see in the table above.
 
@@ -305,4 +310,4 @@ Now Automation should be able to run scripts in Termux in the background, congra
 		df -k . | awk 'NR==2 {printf "%.2f GB\n", $4/1048576}'
 		```
 
-		Use it before anything that requires the Termux:API plugin, as this is faster to read.structure
+		Use it before anything that requires the Termux:API plugin, as this is faster to read.
