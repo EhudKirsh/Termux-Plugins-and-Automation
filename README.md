@@ -1,7 +1,7 @@
 # Termux Plugins & Automation
 
-Note: I was going to publish this repo anyway, but I decided to publish it early in dedication to franek from
-		https://forum.server47.de/viewtopic.php?p=34 who I noticed asked for it.
+This repo is dedicated to franek from https://forum.server47.de/viewtopic.php?p=34 who I noticed asked for it.
+	I was going to publish this repo anyway regardless, though the interest in it motivated me to publish it earlier.
 
 Here's how I automate Termux scripts silently in the background using the Automation app (com.jens.automation2), easily, no root, no clickbait, no problems:
 
@@ -71,8 +71,10 @@ termux-toast -h
 Here's the official list of all the other things that the Termux:API plugin can do: https://wiki.termux.dev > [Termux:API](https://wiki.termux.dev/wiki/Termux:API).
 
 # Step 3 - Set up the Termux:Widget plugin and test it by executing a .sh in Termux:
-The Termux:Widget plugin, as with all the Termux plugins, is entirely optional for this plan of automating Termux. But, why not include it?
-<br>The Automation app lacks a widget, so lets use this as its widget, letting you execute scripts both automatically with the Automation app,
+The Termux:Widget plugin, as with all the Termux plugins, is entirely optional for this plan of automating Termux.
+<br>But, why not include it?
+
+The Automation app lacks a widget, so lets use this as its widget, letting you execute scripts both automatically with the Automation app,
 	and also manually from your phone's home screen with the widget.
 To set up the Termux:Widget plugin, you'll need to make a '.shortcuts' folder where you'll put the executable scripts.
 If you want Termux:Widget to run .sh scripts in Termux silently in the background,
@@ -87,13 +89,13 @@ chmod 700 -R ~/.shortcuts
 Don't worry if you run either of these lines multiple times,
 	in case you forget if you already ran one already or already created either the folder or subfolder manually, these would just be ignored then.
 
-Note that there is a Termux:Boot plugin designed to run scripts on boot, but for simplicity,
-	I don't bother with it as I prefer to use the Automation app to run scripts on boot.
-
 To view, rename, create and delete these folders, as well as to copy or cut (move) and paste .sh files into these folders,
 	you can technically enter commands in Termux but it's more comfortable for me and many if not most people to use File Manager and Text Editor apps.
-<br>I decided to select [BeauTyXT](https://beautyxt.app) as my Text Editor of choice because it can open various text file formats and it auto-saves.<br>
+
 The only thing you can't edit with these apps is turning the scripts to be executable. For this you need the 'chmod' line above.
+
+I decided to select [BeauTyXT](https://beautyxt.app) as my Text Editor of choice because it can open various text file formats and it auto-saves.
+
 I couldn't find any ideal File Manager, so here's a comparison table of the only 4 free privacy-respecting (no trackers & no data collection) File Manager apps
 	I found on Android that can mount Termux via the SAF:
 
@@ -303,4 +305,4 @@ Now Automation should be able to run scripts in Termux in the background, congra
 		df -k . | awk 'NR==2 {printf "%.2f GB\n", $4/1048576}'
 		```
 
-		Use it before anything that requires the Termux:API plugin, as this is faster to read.
+		Use it before anything that requires the Termux:API plugin, as this is faster to read.structure
