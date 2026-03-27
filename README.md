@@ -6,11 +6,12 @@ Note: I was going to publish this repo anyway, but I decided to publish it early
 Here's how I automate Termux scripts silently in the background using the Automation app (com.jens.automation2), easily, no root, no clickbait, no problems:
 
 # Step 1 - gather the ingredients for this recipe, the apps that I use, that work for me:
-These are the apps I installed for this to work: Termux, [Termux:API](https://reports.exodus-privacy.eu.org/en/reports/com.termux.api/latest), [Termux:Widget](https://reports.exodus-privacy.eu.org/en/reports/com.termux.widget/latest), [Automation](https://reports.exodus-privacy.eu.org/en/reports/com.jens.automation2/latest),
+These are the apps I installed for this to work:
+<br>Termux, [Termux:API](https://reports.exodus-privacy.eu.org/en/reports/com.termux.api/latest), [Termux:Widget](https://reports.exodus-privacy.eu.org/en/reports/com.termux.widget/latest), [Automation](https://reports.exodus-privacy.eu.org/en/reports/com.jens.automation2/latest),
 	[File/zip manager 2025](https://reports.exodus-privacy.eu.org/en/reports/com.sobha.filemanager/latest), [BeauTyXT](https://beautyxt.app).
 
-Install Termux and its plugins from either F-Droid or GitHub, not the Google Play Store! Termux from the Google Play Store is notoriously bad.
-<br>I won't explain it here. Look it up or ask an AI if you're curious.
+Install Termux and its plugins from either F-Droid or GitHub, not the Google Play Store!
+<br>Termux from the Google Play Store is notoriously bad. I won't explain it here. Look it up or ask an AI if you're curious.
 
 I installed Termux, and its plugins and Automation using [Droid-ify](https://reports.exodus-privacy.eu.org/en/reports/com.looker.droidify/latest).
 
