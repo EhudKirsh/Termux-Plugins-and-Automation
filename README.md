@@ -19,12 +19,13 @@ The other 2 apps aren't available on F-Droid, so I installed the File/zip manage
 Technically there are other File Manager apps that can be used here.<br>I discuss those in step 3, and why I prefer to just use the File/zip manager 2025 app.
 
 # Step 2, let's get the Termux:API plugin to work:
-The Termux:API plugin gives Termux admin-level powers over hardware sensors. PC terminals normally natively have these powers,<br>but on Android,
-	apps are sandboxed, so this plugin helps make Termux as powerful as a PC terminal without root.
+The Termux:API plugin gives Termux admin-level powers over hardware sensors.
+<br>PC terminals normally natively have these powers, but on Android, apps are sandboxed,
+<br>so this plugin helps make Termux as powerful as a PC terminal without root.
 
 The Termux:API plugin has two uses for me: testing, and setting conditions inside scripts.
-I will use it here as feedback to demonstrate running scripts in Termux.
-To get the Termux:API plugin to work, after installing it, enter this line in Termux:
+<br>I will use it here as feedback to demonstrate running scripts in Termux.
+<br>To get the Termux:API plugin to work, after installing it, enter this line in Termux:
 
 ```sh
 pkg install termux-api
