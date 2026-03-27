@@ -1,6 +1,6 @@
 # Termux Plugins & Automation
 
-Note: I was going to publish to repo anyway, but I decided to publish it early in dedication to franek from
+Note: I was going to publish this repo anyway, but I decided to publish it early in dedication to franek from
 		https://forum.server47.de/viewtopic.php?p=34 who I noticed asked for it.
 
 Here's how I automate Termux scripts silently in the background using the Automation app (com.jens.automation2), easily, no root, no clickbait, no problems:
